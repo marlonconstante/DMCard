@@ -125,7 +125,7 @@
     <BundleResource Include="Resources\Roboto-Medium.ttf" />
     <BundleResource Include="Resources\Roboto-Regular.ttf" />
     <BundleResource Include="Resources\Material-Icons.ttf" />
-    <BundleResource Include="Resources\Font-Awesome-5-Brands-Regular.otf" />
+    <BundleResource Include="Resources\Font-Awesome-5-Brands.ttf" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.targets')" />
