@@ -50,5 +50,10 @@
 		<string>Material-Icons.ttf</string>
 		<string>Font-Awesome-5-Brands.ttf</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>
