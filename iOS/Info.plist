@@ -55,5 +55,9 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Este aplicativo deseja consultar a sua localização atual.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Este aplicativo deseja consultar a sua localização atual.</string>
 </dict>
 </plist>
