@@ -4,6 +4,20 @@
     x:Class="Tabloide.App">
     <Application.Resources>
         <ResourceDictionary>
+            <OnPlatform x:Key="FontIcon"
+                x:TypeArguments="x:String">
+                <On Platform="Android"
+                    Value="Material-Icons.ttf#Material Icons" />
+                <On Platform="iOS"
+                    Value="Material Icons" />
+            </OnPlatform>
+            <OnPlatform x:Key="FontBrand"
+                x:TypeArguments="x:String">
+                <On Platform="Android"
+                    Value="Font-Awesome-5-Brands.ttf#Font Awesome 5 Brands" />
+                <On Platform="iOS"
+                    Value="Font Awesome 5 Brands" />
+            </OnPlatform>
             <OnPlatform x:Key="FontRegular"
                 x:TypeArguments="x:String">
                 <On Platform="Android"

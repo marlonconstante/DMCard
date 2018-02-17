@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Main"
+    xmlns:local="clr-namespace:Tabloide"
     x:Class="Tabloide.MainPage">
-    <Label Text="Welcome to Xamarin Forms!"
-        FontFamily="{StaticResource FontBold}"
-        VerticalOptions="Center"
-        HorizontalOptions="Center" />
+    <StackLayout VerticalOptions="Center"
+        HorizontalOptions="Center">
+        <Label Text="&#xE1DA;"
+            FontFamily="{StaticResource FontIcon}"
+            HorizontalTextAlignment="Center"
+            FontSize="144" />
+        <Label Text="&#xf39e;"
+            FontFamily="{StaticResource FontBrand}"
+            HorizontalTextAlignment="Center"
+            FontSize="144" />
+        <Label Text="DMCard"
+            FontFamily="{StaticResource FontRegular}"
+            HorizontalTextAlignment="Center"
+            FontSize="72" />
+        <Label Text="DMCard"
+            FontFamily="{StaticResource FontMedium}"
+            HorizontalTextAlignment="Center"
+            FontSize="72" />
+        <Label Text="DMCard"
+            FontFamily="{StaticResource FontBold}"
+            HorizontalTextAlignment="Center"
+            FontSize="72" />
+    </StackLayout>
 </ContentPage>
