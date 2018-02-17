@@ -1,29 +1,26 @@
-﻿using Xamarin.Forms;
+﻿using Prism;
+using Prism.Ioc;
+using Prism.Unity;
+using Xamarin.Forms;
 
 namespace Tabloide
 {
-	public partial class App : Application
+	public partial class App : PrismApplication
 	{
-		public App()
+		public App(IPlatformInitializer initializer = null) : base(initializer)
+		{
+		}
+
+		protected override void OnInitialized()
 		{
 			InitializeComponent();
-
-			MainPage = new MainPage();
+			NavigationService.NavigateAsync("NavigationPage/MainPage");
 		}
 
-		protected override void OnStart()
+		protected override void RegisterTypes(IContainerRegistry containerRegistry)
 		{
-			// Handle when your app starts
-		}
-
-		protected override void OnSleep()
-		{
-			// Handle when your app sleeps
-		}
-
-		protected override void OnResume()
-		{
-			// Handle when your app resumes
+			containerRegistry.RegisterForNavigation<NavigationPage>();
+			containerRegistry.RegisterForNavigation<MainPage>();
 		}
 	}
 }
