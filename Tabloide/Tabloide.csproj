@@ -30,4 +30,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Theme\" />
+  </ItemGroup>
 </Project>
