@@ -2,44 +2,14 @@
 <prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
+    xmlns:theme="clr-namespace:Tabloide.Theme"
     x:Class="Tabloide.App">
     <prism:PrismApplication.Resources>
         <ResourceDictionary>
-            <OnPlatform x:Key="FontIcon"
-                x:TypeArguments="x:String">
-                <On Platform="Android"
-                    Value="Material-Icons.ttf#Material Icons" />
-                <On Platform="iOS"
-                    Value="Material Icons" />
-            </OnPlatform>
-            <OnPlatform x:Key="FontBrand"
-                x:TypeArguments="x:String">
-                <On Platform="Android"
-                    Value="Font-Awesome-5-Brands.ttf#Font Awesome 5 Brands" />
-                <On Platform="iOS"
-                    Value="Font Awesome 5 Brands" />
-            </OnPlatform>
-            <OnPlatform x:Key="FontRegular"
-                x:TypeArguments="x:String">
-                <On Platform="Android"
-                    Value="Roboto-Regular.ttf#Roboto" />
-                <On Platform="iOS"
-                    Value="Roboto-Regular" />
-            </OnPlatform>
-            <OnPlatform x:Key="FontMedium"
-                x:TypeArguments="x:String">
-                <On Platform="Android"
-                    Value="Roboto-Medium.ttf#Roboto Medium" />
-                <On Platform="iOS"
-                    Value="Roboto-Medium" />
-            </OnPlatform>
-            <OnPlatform x:Key="FontBold"
-                x:TypeArguments="x:String">
-                <On Platform="Android"
-                    Value="Roboto-Bold.ttf#Roboto Bold" />
-                <On Platform="iOS"
-                    Value="Roboto-Bold" />
-            </OnPlatform>
+            <ResourceDictionary.MergedDictionaries>
+                <theme:Colors />
+                <theme:Fonts />
+            </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </prism:PrismApplication.Resources>
 </prism:PrismApplication>
