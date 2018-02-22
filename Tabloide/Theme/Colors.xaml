@@ -4,6 +4,7 @@
     x:Class="Tabloide.Theme.Colors">
     <Color x:Key="PrimaryColor">#ef4044</Color>
     <Color x:Key="SecondaryColor">#fc771e</Color>
+    <Color x:Key="IconBarColor">#fd8e44</Color>
     <Color x:Key="AccentColor">#fede34</Color>
     <Color x:Key="SuccessColor">#20bf68</Color>
     <Color x:Key="ErrorColor">#ef4044</Color>

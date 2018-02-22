@@ -9,7 +9,7 @@
         <theme:Metrics />
     </ResourceDictionary.MergedDictionaries>
     <Style x:Key="IconBarLabelStyle" TargetType="Label">
-        <Setter Property="TextColor" Value="{StaticResource SecondaryColor}" />
+        <Setter Property="TextColor" Value="{StaticResource IconBarColor}" />
         <Setter Property="FontFamily" Value="{StaticResource FontIcon}" />
         <Setter Property="FontSize" Value="{StaticResource SmallIconSize}" />
         <Setter Property="WidthRequest" Value="{StaticResource MediumIconSize}" />
