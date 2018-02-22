@@ -5,12 +5,7 @@
     xmlns:theme="clr-namespace:Tabloide.Theme"
     x:Class="Tabloide.App">
     <prism:PrismApplication.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <theme:Colors />
-                <theme:Fonts />
-                <theme:Metrics />
-            </ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary MergedWith="theme:Styles">
         </ResourceDictionary>
     </prism:PrismApplication.Resources>
 </prism:PrismApplication>
