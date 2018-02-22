@@ -4,7 +4,6 @@
     x:Class="Tabloide.Theme.Metrics">
     <x:Double x:Key="InputLineHeight">1</x:Double>
     <x:Double x:Key="InputHeight">24</x:Double>
-    <x:Double x:Key="StatusBarHeight">24</x:Double>
     <x:Double x:Key="HeaderHeight">48</x:Double>
     <x:Double x:Key="ButtonHeight">48</x:Double>
     <x:Double x:Key="SectionHeight">32</x:Double>
@@ -25,4 +24,8 @@
     <x:Double x:Key="BigFontSize">16</x:Double>
     <x:Double x:Key="BiggerFontSize">20</x:Double>
     <x:Double x:Key="HigherFontSize">24</x:Double>
-</ResourceDictionary>   
+    <OnPlatform x:Key="HeaderBarPadding" x:TypeArguments="Thickness">
+        <On Platform="iOS" Value="8,20,8,0" />
+        <On Platform="Android" Value="8,0,8,0" />
+    </OnPlatform>
+</ResourceDictionary>
