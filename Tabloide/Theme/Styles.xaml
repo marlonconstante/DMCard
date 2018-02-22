@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:theme="clr-namespace:Tabloide.Theme"
+    x:Class="Tabloide.Theme.Styles">
+    <ResourceDictionary.MergedDictionaries>
+        <theme:Colors />
+        <theme:Fonts />
+        <theme:Metrics />
+    </ResourceDictionary.MergedDictionaries>
+    <Style x:Key="IconBarLabelStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource SecondaryColor}" />
+        <Setter Property="FontFamily" Value="{StaticResource FontIcon}" />
+        <Setter Property="FontSize" Value="{StaticResource SmallIconSize}" />
+        <Setter Property="WidthRequest" Value="{StaticResource MediumIconSize}" />
+        <Setter Property="HeightRequest" Value="{StaticResource MediumIconSize}" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+        <Setter Property="VerticalTextAlignment" Value="Center" />
+    </Style>
+    <Style x:Key="HeaderBarGridStyle" TargetType="Grid">
+        <Setter Property="BackgroundColor" Value="{StaticResource ClearColor}" />
+        <Setter Property="Padding" Value="{StaticResource HeaderBarPadding}" />
+        <Setter Property="HeightRequest" Value="{StaticResource HeaderHeight}" />
+        <Setter Property="VerticalOptions" Value="Start" />
+    </Style>
+</ResourceDictionary>
