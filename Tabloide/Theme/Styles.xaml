@@ -19,8 +19,19 @@
     </Style>
     <Style x:Key="HeaderBarGridStyle" TargetType="Grid">
         <Setter Property="BackgroundColor" Value="{StaticResource ClearColor}" />
-        <Setter Property="Padding" Value="{StaticResource HeaderBarPadding}" />
+        <Setter Property="Padding" Value="{StaticResource HeaderPadding}" />
         <Setter Property="HeightRequest" Value="{StaticResource HeaderHeight}" />
         <Setter Property="VerticalOptions" Value="Start" />
+    </Style>
+    <Style x:Key="DividerBarContentViewStyle" TargetType="ContentView">
+        <Setter Property="BackgroundColor" Value="{StaticResource DarkBackgroundColor}" />
+        <Setter Property="HeightRequest" Value="{StaticResource DividerHeight}" />
+        <Setter Property="Padding" Value="{StaticResource DividerPadding}" />
+    </Style>
+    <Style x:Key="DividerBarLabelStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource ClearColor}" />
+        <Setter Property="FontFamily" Value="{StaticResource FontRegular}" />
+        <Setter Property="FontSize" Value="{StaticResource SmallFontSize}" />
+        <Setter Property="VerticalTextAlignment" Value="Center" />
     </Style>
 </ResourceDictionary>
