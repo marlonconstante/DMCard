@@ -5,6 +5,9 @@
     x:Class="Tabloide.MainPage"
     NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
-        <controls:HeaderBar />
+        <StackLayout>
+            <controls:HeaderBar />
+            <controls:DividerBar Title="SUGERIDOS PARA VOCÊ" />
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
