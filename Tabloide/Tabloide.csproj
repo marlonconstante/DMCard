@@ -33,5 +33,6 @@
   <ItemGroup>
     <Folder Include="Theme\" />
     <Folder Include="Controls\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 </Project>
