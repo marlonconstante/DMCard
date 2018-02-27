@@ -2,6 +2,8 @@
 using Prism.Ioc;
 using Prism.Unity;
 using Tabloide.Services.Showcase;
+using Tabloide.ViewModels;
+using Tabloide.Views;
 using Xamarin.Forms;
 
 namespace Tabloide
@@ -15,7 +17,7 @@ namespace Tabloide
 		protected override void OnInitialized()
 		{
 			InitializeComponent();
-			NavigationService.NavigateAsync("NavigationPage/MainPage");
+			NavigationService.NavigateAsync("NavigationPage/HomePage");
 		}
 
 		protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -23,7 +25,7 @@ namespace Tabloide
 			containerRegistry.Register<IShowcaseService, ShowcaseService>();
 
 			containerRegistry.RegisterForNavigation<NavigationPage>();
-			containerRegistry.RegisterForNavigation<MainPage>();
+			containerRegistry.RegisterForNavigation<HomePage, HomePageViewModel>();
 		}
 	}
 }
