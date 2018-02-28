@@ -3,6 +3,20 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:theme="clr-namespace:Tabloide.Theme"
     x:Class="Tabloide.Controls.HeaderBar">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <Style x:Key="IconBarLabelStyle" TargetType="Label" BasedOn="{StaticResource MediumIconLabelStyle}">
+                <Setter Property="TextColor" Value="{StaticResource IconBarColor}" />
+            </Style>
+            <Style x:Key="HeaderBarGridStyle" TargetType="Grid">
+                <Setter Property="BackgroundColor" Value="{StaticResource ClearColor}" />
+                <Setter Property="Padding" Value="{StaticResource HeaderPadding}" />
+                <Setter Property="ColumnSpacing" Value="{StaticResource MediumColumnSpacing}" />
+                <Setter Property="HeightRequest" Value="{StaticResource HeaderHeight}" />
+                <Setter Property="VerticalOptions" Value="Start" />
+            </Style>
+        </ResourceDictionary>
+    </ContentView.Resources>
     <ContentView.Content>
         <Grid Style="{StaticResource HeaderBarGridStyle}">
             <Grid.ColumnDefinitions>

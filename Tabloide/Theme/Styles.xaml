@@ -8,20 +8,12 @@
         <theme:Fonts />
         <theme:Metrics />
     </ResourceDictionary.MergedDictionaries>
-    <Style x:Key="IconBarLabelStyle" TargetType="Label">
-        <Setter Property="TextColor" Value="{StaticResource IconBarColor}" />
+    <Style x:Key="MediumIconLabelStyle" TargetType="Label">
         <Setter Property="FontFamily" Value="{StaticResource FontIcon}" />
         <Setter Property="FontSize" Value="{StaticResource SmallIconSize}" />
         <Setter Property="WidthRequest" Value="{StaticResource MediumIconSize}" />
         <Setter Property="HeightRequest" Value="{StaticResource MediumIconSize}" />
         <Setter Property="HorizontalTextAlignment" Value="Center" />
         <Setter Property="VerticalTextAlignment" Value="Center" />
-    </Style>
-    <Style x:Key="HeaderBarGridStyle" TargetType="Grid">
-        <Setter Property="BackgroundColor" Value="{StaticResource ClearColor}" />
-        <Setter Property="Padding" Value="{StaticResource HeaderPadding}" />
-        <Setter Property="ColumnSpacing" Value="{StaticResource MediumColumnSpacing}" />
-        <Setter Property="HeightRequest" Value="{StaticResource HeaderHeight}" />
-        <Setter Property="VerticalOptions" Value="Start" />
     </Style>
 </ResourceDictionary>
