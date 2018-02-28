@@ -24,15 +24,4 @@
         <Setter Property="HeightRequest" Value="{StaticResource HeaderHeight}" />
         <Setter Property="VerticalOptions" Value="Start" />
     </Style>
-    <Style x:Key="DividerBarContentViewStyle" TargetType="ContentView">
-        <Setter Property="BackgroundColor" Value="{StaticResource DarkBackgroundColor}" />
-        <Setter Property="HeightRequest" Value="{StaticResource DividerHeight}" />
-        <Setter Property="Padding" Value="{StaticResource BigHorizontalPadding}" />
-    </Style>
-    <Style x:Key="DividerBarLabelStyle" TargetType="Label">
-        <Setter Property="TextColor" Value="{StaticResource ClearColor}" />
-        <Setter Property="FontFamily" Value="{StaticResource FontRegular}" />
-        <Setter Property="FontSize" Value="{StaticResource SmallFontSize}" />
-        <Setter Property="VerticalTextAlignment" Value="Center" />
-    </Style>
 </ResourceDictionary>
