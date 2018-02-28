@@ -9,7 +9,6 @@
     <x:Double x:Key="DividerHeight">32</x:Double>
     <x:Double x:Key="MenuBoxHeight">96</x:Double>
     <x:Double x:Key="MapHeight">180</x:Double>
-    <x:Double x:Key="ShowcaseHeight">263</x:Double>
     <x:Double x:Key="SmallIconSize">24</x:Double>
     <x:Double x:Key="MediumIconSize">32</x:Double>
     <x:Double x:Key="BigIconSize">64</x:Double>
@@ -24,9 +23,16 @@
     <x:Double x:Key="BigFontSize">16</x:Double>
     <x:Double x:Key="BiggerFontSize">20</x:Double>
     <x:Double x:Key="HigherFontSize">24</x:Double>
-    <Thickness x:Key="DividerPadding">16,0</Thickness>
+    <x:Double x:Key="TransparentOpacity">0.87</x:Double>
+    <x:Double x:Key="EmptySpacing">0</x:Double>
+    <x:Double x:Key="MediumRowSpacing">6</x:Double>
+    <x:Double x:Key="MediumColumnSpacing">8</x:Double>
+    <Thickness x:Key="TinyVerticalPadding">0,2</Thickness>
+    <Thickness x:Key="SmallHorizontalPadding">4,0</Thickness>
+    <Thickness x:Key="MediumHorizontalPadding">8,0</Thickness>
+    <Thickness x:Key="BigHorizontalPadding">16,0</Thickness>
     <OnPlatform x:Key="HeaderPadding" x:TypeArguments="Thickness">
         <On Platform="iOS" Value="8,20,8,0" />
-        <On Platform="Android" Value="8,0,8,0" />
+        <On Platform="Android" Value="8,0" />
     </OnPlatform>
 </ResourceDictionary>
