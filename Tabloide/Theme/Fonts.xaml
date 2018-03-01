@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Tabloide.Theme.Fonts">
     <OnPlatform x:Key="FontIcon" x:TypeArguments="x:String">
         <On Platform="Android" Value="Material-Icons.ttf#Material Icons" />
