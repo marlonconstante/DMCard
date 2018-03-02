@@ -1,6 +1,7 @@
 ﻿using Prism;
 using Prism.Ioc;
 using Prism.Unity;
+using Tabloide.Configurations;
 using Tabloide.Services.Showcase;
 using Tabloide.ViewModels;
 using Tabloide.Views;
@@ -17,6 +18,8 @@ namespace Tabloide
 		protected override void OnInitialized()
 		{
 			InitializeComponent();
+			AppConfig.AddSettings(Resources);
+
 			NavigationService.NavigateAsync("NavigationPage/HomePage");
 		}
 

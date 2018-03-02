@@ -1,5 +1,6 @@
 ﻿using System.Globalization;
 using Xamarin.FileStorage.Abstractions;
+using Xamarin.Forms;
 
 namespace Tabloide.Configurations
 {
@@ -11,6 +12,13 @@ namespace Tabloide.Configurations
 		{
 			LoadSettingsFromFile(fileStorage);
 			SetCultureFromSettings();
+		}
+
+		public static void AddSettings(ResourceDictionary resources)
+		{
+			foreach (var property in typeof(AppSettings).GetProperties()) {
+				resources.Add(property.Name, property.GetValue(Settings));
+			}
 		}
 
 		static void LoadSettingsFromFile(IFileStorage fileStorage)
