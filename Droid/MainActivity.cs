@@ -11,7 +11,7 @@ namespace Tabloide.Droid
 	{
 		protected override void OnCreate(Bundle bundle)
 		{
-			AppConfig.LoadFromFile(new FileStorage());
+			AppConfig.SetUp(new FileStorage());
 
 			TabLayoutResource = Resource.Layout.Tabbar;
 			ToolbarResource = Resource.Layout.Toolbar;

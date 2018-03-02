@@ -10,7 +10,7 @@ namespace Tabloide.iOS
 	{
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
-			AppConfig.LoadFromFile(new FileStorage());
+			AppConfig.SetUp(new FileStorage());
 
 			global::Xamarin.Forms.Forms.Init();
 
