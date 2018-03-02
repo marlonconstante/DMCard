@@ -1,0 +1,8 @@
+﻿{
+  "applicationName": "Docelar Supermercados",
+  "storeName": "Docelar",
+  "storeCardName": "Docelar",
+  "language": "pt-BR",
+  "moneyMask": "R${0:N2}",
+  "dateMask": "dd/MM"
+}
