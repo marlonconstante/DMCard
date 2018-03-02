@@ -140,6 +140,13 @@
     <Reference Include="Plugin.Connectivity">
       <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
     </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Xamarin.FileStorage.Abstractions">
+      <HintPath>..\packages\Xamarin.FileStorage.Abstractions.1.0.6\lib\netstandard1.2\Xamarin.FileStorage.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.FileStorage.iOS">
+      <HintPath>..\packages\Xamarin.FileStorage.iOS.1.0.6\lib\xamarinios10\Xamarin.FileStorage.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -180,7 +187,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.targets')" />
   <Import Project="..\packages\Fody.2.2.0\build\netstandard1.2\Fody.targets" Condition="Exists('..\packages\Fody.2.2.0\build\netstandard1.2\Fody.targets')" />
-  <Import Project="..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets')" />
   <Import Project="..\packages\Realm.Database.2.1.0\build\Realm.Database.targets" Condition="Exists('..\packages\Realm.Database.2.1.0\build\Realm.Database.targets')" />
   <Import Project="..\packages\Realm.2.1.0\build\Realm.targets" Condition="Exists('..\packages\Realm.2.1.0\build\Realm.targets')" />
+  <Import Project="..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets')" />
 </Project>
