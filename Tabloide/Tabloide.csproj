@@ -29,6 +29,7 @@
     <Folder Include="Views\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Views\Templates\" />
+    <Folder Include="Configurations\" />
   </ItemGroup>
 
 </Project>
