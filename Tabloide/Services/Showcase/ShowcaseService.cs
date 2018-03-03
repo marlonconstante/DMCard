@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using Tabloide.Models;
 
 namespace Tabloide.Services.Showcase
