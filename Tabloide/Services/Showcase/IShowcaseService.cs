@@ -5,6 +5,6 @@ namespace Tabloide.Services.Showcase
 {
 	public interface IShowcaseService
 	{
-		IDictionary<string, IList<Product>> GetPersonalProductRecommendations();
+		IList<ProductShowcase> GetPersonalProductRecommendations();
 	}
 }
