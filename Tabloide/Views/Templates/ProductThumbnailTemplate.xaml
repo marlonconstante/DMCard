@@ -3,7 +3,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:theme="clr-namespace:Tabloide.Theme"
     xmlns:templates="clr-namespace:Tabloide.Views.Templates"
-    x:Class="Tabloide.Views.Templates.ProductThumbnailTemplate">
+    x:Class="Tabloide.Views.Templates.ProductThumbnailTemplate"
+    IsVisible="{Binding ., Converter={StaticResource NotNullBooleanConverter}}">
     <ContentView.Resources>
         <ResourceDictionary>
             <Style x:Key="BoxIconLabelStyle" TargetType="Label" BasedOn="{StaticResource MediumIconLabelStyle}">
@@ -12,7 +13,7 @@
             </Style>
             <Style x:Key="NameLabelStyle" TargetType="Label">
                 <Setter Property="LineBreakMode" Value="TailTruncation" />
-                <Setter Property="Margin" Value="{StaticResource SmallHorizontalPadding}" />
+                <Setter Property="Margin" Value="{StaticResource MediumHorizontalPadding}" />
                 <Setter Property="Opacity" Value="{StaticResource TransparentOpacity}" />
                 <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
                 <Setter Property="FontFamily" Value="{StaticResource FontRegular}" />
@@ -23,12 +24,12 @@
     <ContentView.Content>
         <Grid RowSpacing="{StaticResource MediumRowSpacing}">
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
+                <RowDefinition Height="{StaticResource ScreenHalfWidth}" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
             <Image Grid.Row="0"
-                Aspect="AspectFill"
+                Margin="{StaticResource BigPadding}"
                 Source="{Binding ImageSource}" />
             <Label Grid.Row="0"
                 Text="{x:Static theme:Icons.AddBox}"
@@ -38,7 +39,7 @@
                 Text="{Binding Name}"
                 Style="{StaticResource NameLabelStyle}" />
             <templates:ProductPriceTemplate Grid.Row="2"
-                Padding="{StaticResource SmallHorizontalPadding}" />
+                Padding="{StaticResource MediumHorizontalPadding}" />
         </Grid>
     </ContentView.Content>
 </ContentView>
