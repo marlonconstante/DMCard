@@ -31,6 +31,7 @@
     <Thickness x:Key="SmallHorizontalPadding">4,0</Thickness>
     <Thickness x:Key="MediumHorizontalPadding">8,0</Thickness>
     <Thickness x:Key="BigHorizontalPadding">16,0</Thickness>
+    <Thickness x:Key="TinyPadding">1</Thickness>
     <Thickness x:Key="SmallPadding">4</Thickness>
     <Thickness x:Key="MediumPadding">8</Thickness>
     <Thickness x:Key="BigPadding">16</Thickness>
