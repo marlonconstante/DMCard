@@ -1,5 +1,6 @@
 ﻿using Foundation;
 using Tabloide.Configurations;
+using Tabloide.iOS.Platform.Display;
 using UIKit;
 using Xamarin.FileStorage.iOS;
 
@@ -10,7 +11,7 @@ namespace Tabloide.iOS
 	{
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
-			AppConfig.SetUp(new FileStorage());
+			AppConfig.SetUp(new FileStorage(), new DisplayMetrics());
 
 			global::Xamarin.Forms.Forms.Init();
 

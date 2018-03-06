@@ -33,6 +33,8 @@
     <Folder Include="Views\Templates\" />
     <Folder Include="Configurations\" />
     <Folder Include="Converters\" />
+    <Folder Include="Platform\" />
+    <Folder Include="Platform\Display\" />
   </ItemGroup>
 
   <ItemGroup>

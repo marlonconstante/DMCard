@@ -2,6 +2,7 @@
 using Android.Content.PM;
 using Android.OS;
 using Tabloide.Configurations;
+using Tabloide.Droid.Platform.Display;
 using Xamarin.FileStorage.Android;
 
 namespace Tabloide.Droid
@@ -11,7 +12,7 @@ namespace Tabloide.Droid
 	{
 		protected override void OnCreate(Bundle bundle)
 		{
-			AppConfig.SetUp(new FileStorage());
+			AppConfig.SetUp(new FileStorage(), new DisplayMetrics());
 
 			TabLayoutResource = Resource.Layout.Tabbar;
 			ToolbarResource = Resource.Layout.Toolbar;
