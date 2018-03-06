@@ -157,6 +157,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Platform\" />
+    <Folder Include="Platform\Display\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -170,6 +172,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Platform\Display\DisplayMetrics.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tabloide\Tabloide.csproj">
