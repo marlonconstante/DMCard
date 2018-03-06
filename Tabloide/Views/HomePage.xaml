@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Tabloide.Controls"
+    xmlns:templates="clr-namespace:Tabloide.Views.Templates"
     x:Class="Tabloide.Views.HomePage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="ShowcasesListViewStyle" TargetType="ListView">
+                <Setter Property="BackgroundColor" Value="{StaticResource LightBackgroundColor}" />
+                <Setter Property="SeparatorVisibility" Value="None" />
+                <Setter Property="HasUnevenRows" Value="true" />
+                <Setter Property="IsGroupingEnabled" Value="true" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
+        <ListView Style="{StaticResource ShowcasesListViewStyle}"
+            GroupDisplayBinding="{Binding Key}"
+            ItemsSource="{Binding Showcases}">
+            <ListView.GroupHeaderTemplate>
+                <DataTemplate>
+                    <ViewCell Height="{StaticResource DividerHeight}">
+                        <controls:DividerBar Title="{Binding Key}" />
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.GroupHeaderTemplate>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid ColumnSpacing="{StaticResource EmptySpacing}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <templates:ProductThumbnailTemplate Grid.Column="0"
+                                BindingContext="{Binding Item1}" />
+                            <templates:ProductThumbnailTemplate Grid.Column="1"
+                                BindingContext="{Binding Item2}" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage.Content>
 </ContentPage>
