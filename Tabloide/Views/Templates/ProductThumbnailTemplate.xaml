@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:theme="clr-namespace:Tabloide.Theme"
              xmlns:templates="clr-namespace:Tabloide.Views.Templates"
+             xmlns:xe="clr-namespace:XamEffects;assembly=XamEffects"
              x:Class="Tabloide.Views.Templates.ProductThumbnailTemplate"
              IsVisible="{Binding ., Converter={StaticResource HasDataConverter}}">
     <ContentView.Resources>
@@ -11,6 +12,7 @@
                 <Setter Property="Padding" Value="{StaticResource TinyPadding}" />
                 <Setter Property="RowSpacing" Value="{StaticResource MediumRowSpacing}" />
                 <Setter Property="BackgroundColor" Value="{StaticResource ClearColor}" />
+                <Setter Property="xe:TouchEffect.Color" Value="{StaticResource ClearColor}" />
             </Style>
             <Style x:Key="BoxIconLabelStyle" TargetType="Label" BasedOn="{StaticResource MediumIconLabelStyle}">
                 <Setter Property="HorizontalOptions" Value="End" />
