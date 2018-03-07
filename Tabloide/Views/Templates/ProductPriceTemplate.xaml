@@ -27,8 +27,6 @@
                 <Setter Property="TextColor" Value="{StaticResource SecondaryColor}" />
                 <Setter Property="FontFamily" Value="{StaticResource FontBold}" />
                 <Setter Property="FontSize" Value="{StaticResource TinyFontSize}" />
-                <Setter Property="WidthRequest" Value="{StaticResource ScreenQuarterWidth}" />
-                <Setter Property="HorizontalOptions" Value="Start" />
             </Style>
         </ResourceDictionary>
     </ContentView.Resources>
@@ -39,10 +37,8 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Label Grid.Row="0"
-                Text="{Binding Path=StoreCardName,
-                Source={x:Static configurations:AppConfig.Settings},
-                Converter={StaticResource UpperTextConverter},
-                StringFormat='COM CARTÃO {0}'}"
+                Text="{Binding StoreCardName, Converter={StaticResource UpperTextConverter}, StringFormat='COM CARTÃO&#x0a;{0}'}"
+                BindingContext="{x:Static configurations:AppConfig.Settings}"
                 Style="{StaticResource CardNameLabelStyle}" />
             <Label Grid.Row="0"
                 Text="{Binding NormalPrice, StringFormat={StaticResource MoneyMaskSetting}}"
