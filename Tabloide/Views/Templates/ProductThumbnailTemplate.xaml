@@ -8,7 +8,7 @@
     <ContentView.Resources>
         <ResourceDictionary>
             <Style x:Key="ProductThumbnailGridStyle" TargetType="Grid">
-                <Setter Property="Margin" Value="{StaticResource TinyPadding}" />
+                <Setter Property="Padding" Value="{StaticResource TinyPadding}" />
                 <Setter Property="RowSpacing" Value="{StaticResource MediumRowSpacing}" />
                 <Setter Property="BackgroundColor" Value="{StaticResource ClearColor}" />
             </Style>
