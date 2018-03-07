@@ -18,6 +18,7 @@ namespace Tabloide
 		protected override void OnInitialized()
 		{
 			InitializeComponent();
+			XamEffects.Effects.Init();
 			AppConfig.AddSettings(Resources);
 
 			NavigationService.NavigateAsync("NavigationPage/HomePage");

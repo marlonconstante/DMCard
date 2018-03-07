@@ -20,6 +20,7 @@ namespace Tabloide.Droid
 			base.OnCreate(bundle);
 
 			global::Xamarin.Forms.Forms.Init(this, bundle);
+			XamEffects.Droid.Effects.Init();
 
 			LoadApplication(new App());
 		}

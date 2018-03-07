@@ -14,6 +14,7 @@ namespace Tabloide.iOS
 			AppConfig.SetUp(new FileStorage(), new DisplayMetrics());
 
 			global::Xamarin.Forms.Forms.Init();
+			XamEffects.iOS.Effects.Init();
 
 			LoadApplication(new App());
 
