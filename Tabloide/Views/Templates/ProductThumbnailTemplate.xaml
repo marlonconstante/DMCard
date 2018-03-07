@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:theme="clr-namespace:Tabloide.Theme"
-    xmlns:templates="clr-namespace:Tabloide.Views.Templates"
-    x:Class="Tabloide.Views.Templates.ProductThumbnailTemplate"
-    IsVisible="{Binding ., Converter={StaticResource NotNullBooleanConverter}}">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:theme="clr-namespace:Tabloide.Theme"
+             xmlns:templates="clr-namespace:Tabloide.Views.Templates"
+             x:Class="Tabloide.Views.Templates.ProductThumbnailTemplate"
+             IsVisible="{Binding ., Converter={StaticResource NotNullBooleanConverter}}">
     <ContentView.Resources>
         <ResourceDictionary>
             <Style x:Key="ProductThumbnailGridStyle" TargetType="Grid">
@@ -34,20 +34,20 @@
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
             <Image Grid.Row="0"
-                Margin="{StaticResource BigPadding}"
-                Source="{Binding ImageSource}" />
+                   Margin="{StaticResource BigPadding}"
+                   Source="{Binding ImageSource}" />
             <Image Grid.Row="0"
-                Aspect="AspectFill"
-                Source="GradientBackground.png" />
+                   Aspect="AspectFill"
+                   Source="GradientBackground.png" />
             <Label Grid.Row="0"
-                Text="{x:Static theme:Icons.AddBox}"
-                TextColor="{StaticResource SuccessColor}"
-                Style="{StaticResource BoxIconLabelStyle}" />
+                   Text="{x:Static theme:Icons.AddBox}"
+                   TextColor="{StaticResource SuccessColor}"
+                   Style="{StaticResource BoxIconLabelStyle}" />
             <Label Grid.Row="1"
-                Text="{Binding Name}"
-                Style="{StaticResource NameLabelStyle}" />
+                   Text="{Binding Name}"
+                   Style="{StaticResource NameLabelStyle}" />
             <templates:ProductPriceTemplate Grid.Row="2"
-                Padding="{StaticResource SmallHorizontalPadding}" />
+                                            Padding="{StaticResource SmallHorizontalPadding}" />
         </Grid>
     </ContentView.Content>
 </ContentView>

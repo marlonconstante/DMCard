@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:theme="clr-namespace:Tabloide.Theme"
-    x:Class="Tabloide.Controls.HeaderBar">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:theme="clr-namespace:Tabloide.Theme"
+             x:Class="Tabloide.Controls.HeaderBar">
     <ContentView.Resources>
         <ResourceDictionary>
             <Style x:Key="IconBarLabelStyle" TargetType="Label" BasedOn="{StaticResource MediumIconLabelStyle}">
@@ -26,14 +26,14 @@
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0"
-                Text="{x:Static theme:Icons.Menu}"
-                Style="{StaticResource IconBarLabelStyle}" />
+                   Text="{x:Static theme:Icons.Menu}"
+                   Style="{StaticResource IconBarLabelStyle}" />
             <Label Grid.Column="2"
-                Text="{x:Static theme:Icons.Search}"
-                Style="{StaticResource IconBarLabelStyle}" />
+                   Text="{x:Static theme:Icons.Search}"
+                   Style="{StaticResource IconBarLabelStyle}" />
             <Label Grid.Column="3"
-                Text="{x:Static theme:Icons.Assignment}"
-                Style="{StaticResource IconBarLabelStyle}" />
+                   Text="{x:Static theme:Icons.Assignment}"
+                   Style="{StaticResource IconBarLabelStyle}" />
         </Grid>
     </ContentView.Content>
 </ContentView>

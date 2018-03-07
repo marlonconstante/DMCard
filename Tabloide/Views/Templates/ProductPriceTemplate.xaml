@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:configurations="clr-namespace:Tabloide.Configurations"
-    x:Class="Tabloide.Views.Templates.ProductPriceTemplate">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:configurations="clr-namespace:Tabloide.Configurations"
+             x:Class="Tabloide.Views.Templates.ProductPriceTemplate">
     <ContentView.Resources>
         <ResourceDictionary>
             <Style x:Key="BasePriceLabelStyle" TargetType="Label">
@@ -37,21 +37,21 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Label Grid.Row="0"
-                Text="{Binding StoreCardName, Converter={StaticResource UpperTextConverter}, StringFormat='COM CARTÃO&#x0a;{0}'}"
-                BindingContext="{x:Static configurations:AppConfig.Settings}"
-                Style="{StaticResource CardNameLabelStyle}" />
+                   Text="{Binding StoreCardName, Converter={StaticResource UpperTextConverter}, StringFormat='COM CARTÃO&#x0a;{0}'}"
+                   BindingContext="{x:Static configurations:AppConfig.Settings}"
+                   Style="{StaticResource CardNameLabelStyle}" />
             <Label Grid.Row="0"
-                Text="{Binding NormalPrice, StringFormat={StaticResource MoneyMaskSetting}}"
-                Style="{StaticResource NormalPriceLabelStyle}"
-                HorizontalOptions="End" />
+                   Text="{Binding NormalPrice, StringFormat={StaticResource MoneyMaskSetting}}"
+                   Style="{StaticResource NormalPriceLabelStyle}"
+                   HorizontalOptions="End" />
             <Label Grid.Row="1"
-                Text="{Binding CardPrice, StringFormat={StaticResource MoneyMaskSetting}}"
-                Style="{StaticResource CardPriceLabelStyle}"
-                VerticalOptions="End" />
+                   Text="{Binding CardPrice, StringFormat={StaticResource MoneyMaskSetting}}"
+                   Style="{StaticResource CardPriceLabelStyle}"
+                   VerticalOptions="End" />
             <Label Grid.Row="1"
-                Text="{Binding PromotionPrice, StringFormat={StaticResource MoneyMaskSetting}}"
-                Style="{StaticResource PromotionPriceLabelStyle}"
-                HorizontalOptions="End" />
+                   Text="{Binding PromotionPrice, StringFormat={StaticResource MoneyMaskSetting}}"
+                   Style="{StaticResource PromotionPriceLabelStyle}"
+                   HorizontalOptions="End" />
         </Grid>
     </ContentView.Content>
 </ContentView>
