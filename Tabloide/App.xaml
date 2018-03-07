@@ -8,7 +8,7 @@
     <prism:PrismApplication.Resources>
         <ResourceDictionary MergedWith="theme:Styles">
             <converters:UpperTextConverter x:Key="UpperTextConverter" />
-            <converters:NotNullBooleanConverter x:Key="NotNullBooleanConverter" />
+            <converters:HasDataConverter x:Key="HasDataConverter" />
         </ResourceDictionary>
     </prism:PrismApplication.Resources>
 </prism:PrismApplication>
