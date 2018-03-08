@@ -36,6 +36,7 @@
     <Folder Include="Converters\" />
     <Folder Include="Platform\" />
     <Folder Include="Platform\Display\" />
+    <Folder Include="Behaviors\" />
   </ItemGroup>
 
   <ItemGroup>
