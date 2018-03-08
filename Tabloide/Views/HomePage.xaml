@@ -15,9 +15,9 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <ListView Style="{StaticResource ShowcasesListViewStyle}"
-                  GroupDisplayBinding="{Binding Key}"
-                  ItemsSource="{Binding Showcases}">
+        <controls:CustomListView Style="{StaticResource ShowcasesListViewStyle}"
+                                 GroupDisplayBinding="{Binding Key}"
+                                 ItemsSource="{Binding Showcases}">
             <ListView.GroupHeaderTemplate>
                 <DataTemplate>
                     <ViewCell Height="{StaticResource DividerHeight}">
@@ -41,6 +41,6 @@
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
-        </ListView>
+        </controls:CustomListView>
     </ContentPage.Content>
 </ContentPage>
