@@ -20,14 +20,14 @@
                                  ItemsSource="{Binding Showcases}">
             <ListView.GroupHeaderTemplate>
                 <DataTemplate>
-                    <ViewCell Height="{StaticResource DividerHeight}">
+                    <controls:CustomViewCell Height="{StaticResource DividerHeight}">
                         <controls:DividerBar Title="{Binding Key}" />
-                    </ViewCell>
+                    </controls:CustomViewCell>
                 </DataTemplate>
             </ListView.GroupHeaderTemplate>
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
+                    <controls:CustomViewCell>
                         <Grid ColumnSpacing="{StaticResource EmptySpacing}">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*" />
@@ -38,7 +38,7 @@
                             <templates:ProductThumbnailTemplate Grid.Column="1"
                                                                 BindingContext="{Binding Item2}" />
                         </Grid>
-                    </ViewCell>
+                    </controls:CustomViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </controls:CustomListView>
