@@ -165,6 +165,7 @@
     <Folder Include="Resources\" />
     <Folder Include="Platform\" />
     <Folder Include="Platform\Display\" />
+    <Folder Include="Renderers\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -179,6 +180,7 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Platform\Display\DisplayMetrics.cs" />
+    <Compile Include="Renderers\CustomViewCellRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tabloide\Tabloide.csproj">
