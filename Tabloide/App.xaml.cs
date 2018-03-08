@@ -29,6 +29,7 @@ namespace Tabloide
 
 			containerRegistry.RegisterForNavigation<NavigationPage>();
 			containerRegistry.RegisterForNavigation<HomePage, HomePageViewModel>();
+			containerRegistry.RegisterForNavigation<ProductPage, ProductPageViewModel>();
 		}
 	}
 }
