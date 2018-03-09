@@ -5,6 +5,7 @@
              xmlns:templates="clr-namespace:Tabloide.Views.Templates"
              xmlns:xe="clr-namespace:XamEffects;assembly=XamEffects"
              x:Class="Tabloide.Views.Templates.ProductThumbnailTemplate"
+             x:Name="container"
              IsVisible="{Binding ., Converter={StaticResource HasDataConverter}}">
     <ContentView.Resources>
         <ResourceDictionary>
@@ -29,7 +30,10 @@
         </ResourceDictionary>
     </ContentView.Resources>
     <ContentView.Content>
-        <Grid Style="{StaticResource ProductThumbnailGridStyle}">
+        <Grid Style="{StaticResource ProductThumbnailGridStyle}"
+              xe:Commands.Tap="{Binding TapCommand, Source={x:Reference container}}"
+              xe:Commands.TapParameter="{Binding .}"
+              xe:EffectsConfig.ChildrenInputTransparent="true">
             <Grid.RowDefinitions>
                 <RowDefinition Height="{StaticResource ScreenHalfWidth}" />
                 <RowDefinition Height="Auto" />
