@@ -1,11 +1,14 @@
 ﻿using Prism.Mvvm;
 using Prism.Navigation;
+using Tabloide.Models;
 
 namespace Tabloide.ViewModels
 {
 	public class ProductPageViewModel : BindableBase, INavigatedAware
 	{
 		INavigationService navigationService;
+
+		public Product Item { get; set; }
 
 		public ProductPageViewModel(INavigationService navigationService)
 		{
@@ -18,6 +21,7 @@ namespace Tabloide.ViewModels
 
 		public void OnNavigatedTo(NavigationParameters parameters)
 		{
+			Item = parameters.GetValue<Product>("Item");
 		}
 	}
 }
