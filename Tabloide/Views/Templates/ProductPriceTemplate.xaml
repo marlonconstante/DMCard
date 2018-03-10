@@ -37,7 +37,7 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Label Grid.Row="0"
-                   Text="{Binding StoreCardName, Converter={StaticResource UpperTextConverter}, StringFormat='COM CARTÃO&#x0a;{0}'}"
+                   Text="{Binding StoreCardMessage, Converter={StaticResource UpperTextConverter}}"
                    BindingContext="{x:Static configurations:AppConfig.Settings}"
                    Style="{StaticResource CardNameLabelStyle}" />
             <Label Grid.Row="0"
