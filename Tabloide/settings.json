@@ -3,6 +3,7 @@
   "storeName": "Docelar",
   "storeCardMessage": "Com cartão\nDocelar",
   "expirationMessageFormat": "Válido até {0:dd/MM}",
+  "itemCodeMessageFormat": "Cód. {0}",
   "moneyMask": "R${0:N2}",
   "language": "pt-BR"
 }

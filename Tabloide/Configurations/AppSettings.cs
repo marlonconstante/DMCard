@@ -10,6 +10,8 @@
 
 		public string ExpirationMessageFormat { get; set; }
 
+		public string ItemCodeMessageFormat { get; set; }
+
 		public string MoneyMask { get; set; }
 
 		public string Language { get; set; }
