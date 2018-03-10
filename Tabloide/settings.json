@@ -1,8 +1,8 @@
 ﻿{
   "applicationName": "Docelar Supermercados",
   "storeName": "Docelar",
-  "storeCardName": "Docelar",
-  "language": "pt-BR",
+  "storeCardMessage": "Com cartão\nDocelar",
+  "expirationMessageFormat": "Válido até {0:dd/MM}",
   "moneyMask": "R${0:N2}",
-  "dateMask": "dd/MM"
+  "language": "pt-BR"
 }
