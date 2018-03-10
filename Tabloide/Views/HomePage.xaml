@@ -8,7 +8,7 @@
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="ShowcasesListViewStyle" TargetType="ListView">
-                <Setter Property="BackgroundColor" Value="{StaticResource LightBackgroundColor}" />
+                <Setter Property="BackgroundColor" Value="{StaticResource BorderColor}" />
                 <Setter Property="SeparatorVisibility" Value="None" />
                 <Setter Property="HasUnevenRows" Value="true" />
                 <Setter Property="IsGroupingEnabled" Value="true" />

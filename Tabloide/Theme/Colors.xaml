@@ -9,6 +9,7 @@
     <Color x:Key="SuccessColor">#20bf68</Color>
     <Color x:Key="ErrorColor">#ef4044</Color>
     <Color x:Key="ClearColor">#ffffff</Color>
+    <Color x:Key="BorderColor">#f1f1f1</Color>
     <Color x:Key="LightBackgroundColor">#fafafa</Color>
     <Color x:Key="DarkBackgroundColor">#35495d</Color>
     <Color x:Key="LightTextColor">#616161</Color>
