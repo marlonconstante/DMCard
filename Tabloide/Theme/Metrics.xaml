@@ -35,6 +35,8 @@
     <Thickness x:Key="SmallPadding">4</Thickness>
     <Thickness x:Key="MediumPadding">8</Thickness>
     <Thickness x:Key="BigPadding">16</Thickness>
+    <Thickness x:Key="BiggerPadding">32</Thickness>
+    <Thickness x:Key="HigherPadding">64</Thickness>
     <OnPlatform x:Key="HeaderPadding" x:TypeArguments="Thickness">
         <On Platform="iOS" Value="8,20,8,0" />
         <On Platform="Android" Value="8,0" />
