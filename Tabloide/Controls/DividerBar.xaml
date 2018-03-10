@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Style="{StaticResource DividerBarContentViewStyle}"
              x:Class="Tabloide.Controls.DividerBar"
-             x:Name="container">
+             x:Name="control">
     <ContentView.Resources>
         <ResourceDictionary>
             <Style x:Key="DividerBarContentViewStyle" TargetType="ContentView">
@@ -20,7 +20,7 @@
     </ContentView.Resources>
     <ContentView.Content>
         <Label Text="{Binding Title}"
-               BindingContext="{x:Reference container}"
+               BindingContext="{x:Reference control}"
                Style="{StaticResource DividerBarLabelStyle}" />
     </ContentView.Content>
 </ContentView>
