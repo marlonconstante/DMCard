@@ -16,4 +16,16 @@
         <Setter Property="HorizontalTextAlignment" Value="Center" />
         <Setter Property="VerticalTextAlignment" Value="Center" />
     </Style>
+    <Style x:Key="BaseButtonStyle" TargetType="Button">
+        <Setter Property="BorderRadius" Value="{StaticResource Zero}" />
+        <Setter Property="TextColor" Value="{StaticResource TranslucentColor}" />
+        <Setter Property="FontFamily" Value="{StaticResource FontMedium}" />
+        <Setter Property="FontSize" Value="{StaticResource MediumFontSize}" />
+    </Style>
+    <Style x:Key="SuccessButtonStyle" TargetType="Button" BasedOn="{StaticResource BaseButtonStyle}">
+        <Setter Property="BackgroundColor" Value="{StaticResource SuccessColor}" />
+    </Style>
+    <Style x:Key="DangerButtonStyle" TargetType="Button" BasedOn="{StaticResource BaseButtonStyle}">
+        <Setter Property="BackgroundColor" Value="{StaticResource DangerColor}" />
+    </Style>
 </ResourceDictionary>
