@@ -7,12 +7,72 @@
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="ProductGridStyle" TargetType="Grid">
-                <Setter Property="BackgroundColor" Value="{StaticResource DarkBackgroundColor}" />
+                <Setter Property="RowSpacing" Value="{StaticResource EmptySpacing}" />
+                <Setter Property="BackgroundColor" Value="{StaticResource ClearColor}" />
+            </Style>
+            <Style x:Key="CaptionLabelStyle" TargetType="Label">
+                <Setter Property="Margin" Value="{StaticResource BigHorizontalPadding}" />
+                <Setter Property="Opacity" Value="{StaticResource TransparentOpacity}" />
+                <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
+                <Setter Property="FontFamily" Value="{StaticResource FontRegular}" />
+                <Setter Property="FontSize" Value="{StaticResource SmallFontSize}" />
+            </Style>
+            <Style x:Key="TitleLabelStyle" TargetType="Label">
+                <Setter Property="Margin" Value="{StaticResource BigHorizontalPadding}" />
+                <Setter Property="Opacity" Value="{StaticResource TransparentOpacity}" />
+                <Setter Property="TextColor" Value="{StaticResource DarkTextColor}" />
+                <Setter Property="FontFamily" Value="{StaticResource FontRegular}" />
+                <Setter Property="FontSize" Value="{StaticResource BigFontSize}" />
+            </Style>
+            <Style x:Key="DescriptionLabelStyle" TargetType="Label">
+                <Setter Property="Margin" Value="{StaticResource BigPadding}" />
+                <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
+                <Setter Property="FontFamily" Value="{StaticResource FontRegular}" />
+                <Setter Property="FontSize" Value="{StaticResource MediumFontSize}" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <Grid Style="{StaticResource ProductGridStyle}">
-        </Grid>
+        <ScrollView>
+            <Grid Style="{StaticResource ProductGridStyle}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="{StaticResource ScreenFullWidth}" />
+                    <RowDefinition Height="1" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0"
+                       Margin="{StaticResource HigherPadding}"
+                       Source="{Binding Item.ImageSource}" />
+                <Image Grid.Row="0"
+                       Aspect="AspectFill"
+                       Source="GradientBackground.png" />
+                <BoxView Grid.Row="1"
+                         Color="{StaticResource ShadowColor}" />
+                <Label Grid.Row="2"
+                       Margin="16,16,16,8"
+                       Text="{Binding Item.ExpirationDate, StringFormat={StaticResource ExpirationMessageFormatSetting}}"
+                       Style="{StaticResource CaptionLabelStyle}" />
+                <Label Grid.Row="3"
+                       Text="{Binding Item.Name}"
+                       Style="{StaticResource TitleLabelStyle}" />
+                <templates:ProductPriceTemplate Grid.Row="4"
+                                                Padding="{StaticResource BigPadding}"
+                                                BindingContext="{Binding Item}" />
+                <Label Grid.Row="5"
+                       Text="{Binding Item.Code, StringFormat={StaticResource ItemCodeMessageFormatSetting}}"
+                       Style="{StaticResource CaptionLabelStyle}" />
+                <Label Grid.Row="6"
+                       Text="{Binding Item.Description}"
+                       Style="{StaticResource DescriptionLabelStyle}" />
+                <Button Grid.Row="7"
+                        Text="ADICIONAR À LISTA"
+                        Style="{StaticResource SuccessButtonStyle}" />
+            </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
