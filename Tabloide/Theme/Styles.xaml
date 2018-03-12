@@ -17,6 +17,7 @@
         <Setter Property="VerticalTextAlignment" Value="Center" />
     </Style>
     <Style x:Key="BaseButtonStyle" TargetType="Button">
+        <Setter Property="HeightRequest" Value="{StaticResource ButtonHeight}" />
         <Setter Property="BorderRadius" Value="{StaticResource Zero}" />
         <Setter Property="TextColor" Value="{StaticResource TranslucentColor}" />
         <Setter Property="FontFamily" Value="{StaticResource FontMedium}" />
