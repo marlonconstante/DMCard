@@ -14,5 +14,6 @@
     <Color x:Key="DarkBackgroundColor">#35495d</Color>
     <Color x:Key="LightTextColor">#616161</Color>
     <Color x:Key="DarkTextColor">#000000</Color>
+    <Color x:Key="TranslucentColor">rgba(255,255,255,0.87)</Color>
     <Color x:Key="ShadowColor">rgba(0,0,0,0.08)</Color>
 </ResourceDictionary>
